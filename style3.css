@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#connectsec{
+    background: url('/imgs/Page\ 4.jpg') no-repeat center;
+    height: 400vh;
+    width: 100vw;
+}
+.ducttape4 img{
+    height: 100px;
+    width: 400px;
+    margin: 100px 200px auto 580px;
+}
+.card{
+    display: flex;
+    height: 400px;
+    width: 1100px;
+    margin-left: 200px;
+    padding-top: 60px;
+    column-gap: 100px;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.cardd{
+    height: 370px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+.card1{
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.card2{
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.card3{
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.youtube{
+    margin-left: 75px;
+    margin-top: 15px;
+}
+.youtube img{
+    height: 40px;
+}
+.rakansub{
+    margin-left: 35px;
+    margin-top: 6px;
+}
+.rakansub img{
+    height: 230px;
+    width: 230px;
+}
+.instagram{
+    margin-left: 70px;
+    margin-top: 15px;
+}
+.instagram img{
+    height: 40px;
+}
+.tiktok{
+    margin-left: 90px;
+    margin-top: 15px;
+}
+.tiktok img{
+    height: 40px;
+}
+.nameyou{
+    margin-top: 6px;
+}
+.nameyou p{
+    font-size: 12px;
+    font-family: 'gothammedium';
+    text-align: center;
+}
+.subscribe{
+    margin-left: 75px;
+    margin-top: 10px;
+}
+.subscribe button{
+    background-color: #8a0fcb;
+    color: #fff;
+    font-family: 'Gothambold';
+    font-size: 12px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px #3f1853;
+    padding: 10px 35px 10px 35px;
+    transition: all 0.3s ease;
+}
+.subscribe button:hover{
+    background-color: #8a0fcb;
+    color: #fff;
+    font-family: 'Gothambold';
+    font-size: 12px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px #3f1853;
+    padding: 10px 35px 10px 35px;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.subscribe button a{
+    color: #fff;
+}
+.follow{
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.follow button{
+    background-color: #8a0fcb;
+    color: #fff;
+    font-family: 'Gothambold';
+    font-size: 12px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px #3f1853;
+    padding: 10px 35px 10px 35px;
+    transition: all 0.3s ease;
+}
+.follow button:hover{
+    background-color: #8a0fcb;
+    color: #fff;
+    font-family: 'Gothambold';
+    font-size: 12px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px #3f1853;
+    padding: 10px 35px 10px 35px;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.follow button a{
+    color: #fff;
+}
+.ccrakan p{
+    color: #5f5f5f;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 70px;
+    letter-spacing: 4px;
+    font-family: 'gothammedium';
+}
+.footer{
+    background-color: #fff;
+    /* border: 2px solid #8a0fcb; */
+    margin-top: 55px;
+}
+.footer img{
+    height: 40px;
+    width: 400px;
+    margin-left: 600px;
+}
+.card1:hover{
+    margin-top: 0px;
+    box-shadow: 4px 4px 4px 4px #8a0fcb;
+}
+.card2:hover{
+    margin-top: 0px;
+    box-shadow: 4px 4px 4px 4px #8a0fcb;
+}
+.card3:hover{
+    margin-top: 0px;
+    box-shadow: 4px 4px 4px 4px #8a0fcb;
+}

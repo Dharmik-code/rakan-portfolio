@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.intro{
+    /* width: 100vh;
+    height: 100vh; */
+    display: grid;
+    background: url('/imgs/Page\ 2.jpg') no-repeat center;
+    height: 465vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* row-gap: 10px;
+    column-gap: 10px; */
+}
+.item1{
+    padding: 0;
+    margin: 95px -100px auto 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+.item1 img{
+    height: 900px;
+    width: 650px;
+    padding: 0;
+    margin: 0;
+    /* overflow-x: visible; */
+}
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item2 h1{
+    text-align: left;
+    margin-top: 300px;
+    margin-left: -85px;
+    /* margin-right: 100px; */
+    color: #8a0fcb;
+    font-family: 'gothamblack';
+    letter-spacing: -2px;
+    font-size: 50px;
+    font-weight: 800;
+    z-index: 3;
+}
+.para{
+    margin-top: 15px;
+}
+.item2 p{
+    text-align: justify;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-left: -85px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'gothammedium';
+    font-size: 25px;
+    color: #fff;
+    font-weight: lighter;
+    z-index: 3;
+    /* overflow: hidden;
+    border-right: .15em solid #8a0fcb;
+    white-space: nowrap;
+    margin: 5 auto;
+    letter-spacing: .15em;
+    animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+} */
+/* @keyframes typing {
+    from { width: 0 }
+    to { width: 100% } */
+}
+/* @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #8a0fcb; }
+}  */
+.item2 .hand img{
+    height: 270px;
+    width: 240px;
+    float: right;
+    margin-top: 150px;
+}
+/* .item{
+    background-color: aqua;
+} */

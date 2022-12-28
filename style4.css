@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+.stop-scroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.mystorysec{
+    background: url('/imgs/Page\ 3.jpg') no-repeat center;
+    height: 472vh;
+}
+#more{
+    display: none;
+}
+.myimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myimg img{
+    height: 400px;
+    width: 400px;
+    margin-top: 100px;
+}
+.storytext{
+    margin: 10px 250px 10px 250px;
+}
+.storytext p{
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+#myBtnRM{
+    border: none;
+    background-color: transparent;
+    color: blueviolet;
+    font-family: 'gothamblack';
+    font-size: 15px;
+    margin-left: 460px;
+    /* margin-top: 5px; */
+    height: 30px;
+    width: 100px;
+    text-decoration: overline;
+    transition: all 0.3s ease;
+}
+#myBtnRM:hover{
+    cursor: pointer;
+    font-size: 12px;
+    color: #44135e;
+    text-shadow: 5px 5px 5px #150050;
+}

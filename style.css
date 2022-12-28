@@ -1,0 +1,321 @@
+@font-face{
+    font-family: gothamblack;
+    src: url(/Fonts/Gotham-Font/Gotham-Font/Gotham-Black.otf);
+    font-weight: bold;
+}
+@font-face{
+    font-family: gothammedium;
+    src: url(/Fonts/Gotham-Font/Gotham-Font/GothamMedium.ttf);
+    font-weight: bold;
+}
+@font-face{
+    font-family: gothambold;
+    src: url(/Fonts/Gotham-Font/Gotham-Font/Gotham-Bold.otf);
+    font-weight: bold;
+}
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* .stop-scroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+} */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* NAVBAR STYLING */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background-color: black;
+    font-family: 'Roboto';
+    /* transition: all 0.3s ease; */
+}
+/* .navbar.sticky{
+    padding: 5px 0;
+    background-color: black;
+} */
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+.navbar .logo a{
+    color: #fff;
+    font-family: 'gothamblack';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-right: 240px;
+    transition: all 0.3s ease;
+}
+.navbar .logo a:hover{
+    color: #a600ff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 55px;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 17px;
+    font-family: 'gothammedium';
+    transition: all 0.3s ease-in-out;
+}
+.navbar li a:active{
+    color: #8a0fcb;
+}
+.navbar .menu li a:hover{
+    color: #8a0fcb;
+    transform: scale(0.5);
+}
+.WWM{
+    /* align-content: flex-end; */
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+    font-family: 'gothamblack';
+    list-style: none;
+    border: none;
+    color: #fff;
+    padding: 12px 20px 12px 20px;
+    background-color: #44135e;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px 7px #150050;
+    -moz-box-shadow: 0 0 10px 7px #150050;
+    box-shadow: 0 0 10px 7px #150050;
+    transition: all 0.3s ease-in-out;
+}
+.WWM:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+/* Menu btn styling */
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Home Section */
+
+.home{
+    display: grid;
+    background: url("/imgs/Rakan\ Back.gif") no-repeat center;
+    height: 160vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Roboto';
+}
+.max-width2{
+    display: grid;
+    /* margin: 250px auto auto 10px; */
+    margin: 140px auto auto 70px;
+    grid-template-columns: 1fr 1fr;
+}
+.home-content{
+    margin-top: 50px;
+    animation-name: homecontent;
+    animation-duration: 1.5s;
+}
+@keyframes homecontent{
+    0%{margin-top: 30px;}
+    100%{margin-top: 150px;}
+}
+.imgrakan img{
+    height: 450px;
+    width: 350px;
+}
+.imgrakan{
+    margin-left: 320px;
+    margin-top: -40px;
+    animation-name: imgrakana;
+    animation-duration: 1.5s;
+}
+@keyframes imgrakana{
+    0%{margin-left: 10px;}
+    100%{margin-left: 250px;}
+}
+.home .home-content p{
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 62px;
+}
+.home .home-content .text2{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    /* line-height: 60px; */
+}
+.home .home-content p span{
+    color: #8a0fcb;
+}
+.home .home-content .clickbelow{
+    color: #400171;
+    font-weight: 900;
+    background-color: #fff;
+    padding: 15px 35px 15px 35px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.clickbelow:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    box-shadow: 2px 2px 2px 2px;
+}
+
+/* Responsive media queries */
+
+@media (max-width: 1276px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: rgb(0, 0, 0, 0.9);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu button{
+        display: block;
+        margin: 20px 0;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+    }
+    .navbar .menu .WWM{
+        display: inline-block;
+        margin-left: 50px;
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 375px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    .home{
+        background: url("/imgs/Rakan\ Back.gif") no-repeat center center;
+        background-size: cover;
+        height: 190vh;
+        width: 100vw;
+        /* min-height: 1000px; */
+    }
+    .max-width{
+        max-width: 376px;
+        padding: 0 50px;
+    }
+    .navbar .logo a{
+        margin-right: 0px;
+        font-size: 18px;
+    }
+    .menu-btn{
+        margin-left: 200px;
+        margin-right: 40px;
+    }
+    .max-width2{
+        display: grid;
+        /* margin: 250px auto auto 10px; */
+        margin: 10px auto auto 100px;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .home .home-content .income{
+        font-size: 40px;
+        margin-top: 70px;
+        margin-left: -75px;
+        line-height: 35px;
+    }
+    .home .home-content .text2{
+        font-size: 40px;
+        margin-top: 10px;
+        margin-left: -75px;
+        line-height: 35px;
+    }
+    .home .home-content .text2{
+        font-size: 12px;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        /* line-height: 60px; */
+    }
+    .imgrakan img{
+        height: 350px;
+        width: 250px;
+    }
+    .imgrakan{
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-top: -100px;
+        animation-name: imgrakana;
+        animation-duration: 1.5s;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: rgb(0, 0, 0, 0.9);
+        text-align: center;
+        padding-top: 60px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 30px 170px 5px 5px;
+    }
+    .navbar .menu .WWM{
+        display: none;
+        margin-left: 50px;
+    }
+    .home .home-content .clickbelow{
+        padding: 10px 15px 10px 15px;
+        margin-top: 10px;
+        margin-left: -75px;
+    }
+}
